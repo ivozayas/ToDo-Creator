@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ToDoCreator/static/css/main.715223a2.css",
+    "main.js": "/ToDoCreator/static/js/main.bb4dd98e.js",
+    "index.html": "/ToDoCreator/index.html",
+    "main.715223a2.css.map": "/ToDoCreator/static/css/main.715223a2.css.map",
+    "main.bb4dd98e.js.map": "/ToDoCreator/static/js/main.bb4dd98e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.715223a2.css",
+    "static/js/main.bb4dd98e.js"
+  ]
+}
