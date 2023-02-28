@@ -1,0 +1,33 @@
+.ToDoSearch{
+    border-radius: 2px;
+    margin: auto;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    min-width: 200px;
+    border: 1px solid rgb(110, 184, 187);
+    color: cadetblue;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    box-shadow: 1px 6px 10px rgb(71, 121, 122, 0.5);
+    text-align: center;
+}
+
+.ToDoSearch::placeholder {
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    color: rgb(123, 184, 186);
+}
+
+.ToDoSearch:focus {
+    outline-color: cadetblue;
+}
+
+.ToDoSearch:disabled {
+    opacity: 50%;
+}
+
+.ToDoSearch:hover {
+    box-shadow: 1px 2px 10px rgb(71, 121, 122, 0.5);
+}
