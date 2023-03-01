@@ -1,0 +1,27 @@
+.ToDoButton{
+    background-color: cadetblue;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    /* box-shadow: 0px 5px 10px rgb(71, 121, 122, 0.5); */
+
+    transform: rotate(0);
+    transition: .4s ease;
+    z-index: 1;
+}
+
+.ToDoButton:hover{
+    transform: rotate(224deg);
+}
