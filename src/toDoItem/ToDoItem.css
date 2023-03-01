@@ -13,14 +13,14 @@
     box-shadow: 1px 6px 10px rgb(71, 121, 122, 0.5);
     white-space: nowrap;
     padding: 0px 30px;
-    width: 230px;
+    width: 280px;
 }
 
-/*  */
+
 .TodoItem-p {
     margin: 15px 0px;
     width: calc(100% - 120px);
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     font-weight: 400;
   }
@@ -28,7 +28,7 @@
     text-decoration: line-through;
   }
   
-  /*  */
+  
   .Icon {
     font-family: Poppins, sans-serif;
     cursor: pointer;
@@ -42,7 +42,7 @@
     /* background-color: #CCC; */
   }
   
-  /*  */
+  
   .Icon-check {
     position: absolute;
     left: 12px;
@@ -50,8 +50,11 @@
   .Icon-check--active {
     color: rgb(0, 218, 152);
   }
+  .Icon-check:hover {
+    color: rgb(0, 218, 152);
+  }
 
-  /*  */
+  
   .Icon-delete {
     position: absolute;
     font-size: 45px;
@@ -60,7 +63,7 @@
     transform: rotate(-45deg);
   }
 
-  /*  */
+  
   .Icon-delete:hover {
     color: red;
   }
