@@ -1,0 +1,30 @@
+.ChangeAlert-bg {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #5f9ea04f;
+    z-index:2;
+}
+
+.ChangeAlert-container {
+    position:fixed;
+    bottom:-10px;
+    left:-10px;
+    right:-10px;
+    padding:30px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    text-align: center;
+}
+
+.ChangeAlert-container p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ChangeAlert-container button {
+    margin-top: 10px;
+    margin-bottom: 20px
+}
