@@ -10,6 +10,7 @@
     font-family: Poppins, sans-serif;
     font-weight: 300;
     font-size: 15px;
+    transition: box-shadow .1s ease-in-out;
     box-shadow: 1px 6px 10px rgb(71, 121, 122, 0.5);
     text-align: center;
 }
