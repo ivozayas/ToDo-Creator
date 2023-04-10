@@ -2,9 +2,15 @@ import React from 'react'
 import { useLocalStorage } from './useLocalStorage.js'
 
 function useToDos() {
-    const {item: toDos, saveItem: saveToDos, loading, error, sync} = useLocalStorage('ToDos', [])
+    const {
+        item: toDos,
+        saveItem: saveToDos,
+        loading,
+        error,
+        sync
+    } = useLocalStorage('ToDos', [])
 
-    const [searchValue, setSearchValue] = React.useState('')
+    const [ searchValue, setSearchValue ] = React.useState('')
     const [ openModal, setOpenModal ] = React.useState(false)
 
     const completedToDos = toDos.filter(toDo => !!toDo.completed).length
@@ -51,20 +57,25 @@ function useToDos() {
 
     //
     return {
+        states: {
             error,
             loading,
             completedToDos,
             totalToDos,
             searchValue,
-            setSearchValue,
             searchedToDos,
+            openModal,
+
+        },
+        stateUpdaters: {
+            setSearchValue,      
             addToDo,
             completeToDo,
             deleteToDo,
-            openModal,
             setOpenModal,
             sync
-        }   
+        }
+    }   
 }
 
 export { useToDos }
