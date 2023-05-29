@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-// Hooks
 function useLocalStorage(itemName, initialValue){ // Si en vez de asignarle a lo que sea que necesite un valor por defecto específico que requiera para ese caso concreto (en este caso un array vacío), puedo mandar un segundo parámetro que será el por defecto para que al llamar al hook pueda mandarle el valor que necesite en ese momento, siendo una solución mucho más versatil para diferentes situaciones
     const [error, setError] = React.useState(false)
     const [loading, setLoading] = React.useState(true)
     const [item, setItem] = React.useState(initialValue) // estado inicial: valor por defecto (initialValue)
     const [syncItem, setSyncItem] = React.useState(true)
+    
     React.useEffect(() => {
         // simulacion de peticion a una API
         setTimeout(() => {
@@ -29,7 +28,7 @@ function useLocalStorage(itemName, initialValue){ // Si en vez de asignarle a lo
             setError(error)
         }
         }, 2000)
-    }, [syncItem])
+    }, [syncItem, initialValue, itemName])
 
     //
     const saveItem = (newItem) => {
